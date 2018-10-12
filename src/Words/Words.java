@@ -35,6 +35,16 @@ public class Words {
         }
         return  t+"|"+ TV;
     }
+
+    public void swap(Words words) {
+        String temp;
+        temp = this.TA;
+        this.TA = words.getTA();
+        words.setTA(temp);
+        temp = this.TV;
+        this.TV = words.getTV();
+        words.setTV(temp);
+    }
 }
 
 
